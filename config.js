@@ -7,7 +7,7 @@ System.config({
   },
 
   packages: {
-    "github:readium/readium-js@0.22.2": {
+    "readium/readium-js": {
       "defaultExtension": "js",
       "format": "amd",
       "main": "js/Readium",
@@ -15,13 +15,17 @@ System.config({
         "version.json": "./dev/version.json!text",
         "URIjs": "medialize/URI.js",
         "zip-ext": "gildas-lormeau/zip.js/WebContent/zip-ext",
-        "text": "text"
+        "text": "github:systemjs/plugin-text@0.0.4",
+        "underscore": "npm:underscore@1.8.3",
+        "readium_shared_js": "github:readium/readium-shared-js@0.22.2/js",
+        "readium_js": "readium/readium-js/js",
+          "cryptoJs": "github:brix/crypto-js@3.1.6"
       }
     },
     "github:readium/readium-shared-js@0.22.2": {
       "format": "amd",
       "map": {
-        "eventEmitter": "primus/eventemitter3",
+        "eventEmitter": "github:primus/eventemitter3@1.1.1",
         "jquerySizes": "bramstein/jsizes/lib/jquery.sizes",
         "readium_cfi_js": "./build-output/_multiple-bundles/readium-cfi-js",
         "rangy": "timdown/rangy-release",
@@ -33,7 +37,7 @@ System.config({
   },
 
   map: {
-    "NV/CSSOM": "github:NV/CSSOM@0.3.1",
+    "NV/CSSOM": "github:NV/CSSOM@0.3.1/build/CSSOM",
     "bramstein/fontloader": "github:bramstein/fontloader@1.2.2",
     "bramstein/jsizes": "github:bramstein/jsizes@0.33.0",
     "brix/crypto-js": "github:brix/crypto-js@3.1.6",
@@ -45,6 +49,7 @@ System.config({
     "readium/readium-js": "github:readium/readium-js@0.22.2",
     "readium/readium-shared-js": "github:readium/readium-shared-js@0.22.2",
     "text": "github:systemjs/plugin-text@0.0.4",
-    "timdown/rangy-release": "github:timdown/rangy-release@1.3.0"
+    "timdown/rangy-release": "github:timdown/rangy-release@1.3.0",
+    "underscore": "npm:underscore@1.8.3"
   }
 });
