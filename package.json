@@ -22,7 +22,6 @@
   },
   "jspm": {
     "dependencies": {
-      "NV/CSSOM": "github:NV/CSSOM@^0.3.1",
       "bramstein/fontloader": "github:bramstein/fontloader@^1.2.2",
       "bramstein/jsizes": "github:bramstein/jsizes@^0.33.0",
       "brix/crypto-js": "github:brix/crypto-js@^3.1.6",
